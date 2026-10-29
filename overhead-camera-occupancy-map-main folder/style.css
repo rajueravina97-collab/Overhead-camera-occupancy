@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #aaa;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.panel {
+    background: #181818;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.panel h2 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #ddd;
+}
+
+
+/* ===============================
+   CAMERA
+================================ */
+
+.camera-container {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    background: #222;
+    overflow: hidden;
+    border: 2px solid #555;
+}
+
+#cameraVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#detectionCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 450px;
+    pointer-events: none;
+}
+
+#cameraMessage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+/* ===============================
+   PANEL INFO
+================================ */
+
+.panel-info {
+    margin-top: 10px;
+    color: #999;
+    font-size: 13px;
+}
+
+
+/* ===============================
+   GRID
+================================ */
+
+#gridCanvas {
+    display: block;
+    border: 2px solid #555;
+    background: #222;
+}
+
+
+/* ===============================
+   CAMERA SELECTOR
+================================ */
+
+.camera-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.camera-selector label {
+    color: #aaa;
+    font-size: 13px;
+}
+
+#cameraSelect {
+    background: #222;
+    color: white;
+    border: 1px solid #555;
+    padding: 7px 10px;
+    border-radius: 4px;
+}
+
+#startCameraButton {
+    background: #333;
+    color: white;
+    border: 1px solid #666;
+    padding: 7px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#startCameraButton:hover {
+    background: #444;
+}
+
+
+/* ===============================
+   LEGEND
+================================ */
+
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.legend-box {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+.person {
+    background: orange;
+}
+
+.occupied {
+    background: #b83b3b;
+}
+
+.object {
+    background: #555;
+}
+
+.free {
+    background: #1f7a3a;
+}
+
+
+/* ===============================
+   STATUS
+================================ */
+
+.status {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 15px;
+}
+
+#detectionStatus {
+    color: orange;
+}
+
+#occupancyStatus {
+    color: #4caf50;
+}
